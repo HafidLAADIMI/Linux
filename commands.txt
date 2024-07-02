@@ -1,0 +1,136 @@
+# §§§§§§§§§§§§§§§§§§§§§§§§§§ COMMANDS TO LEARN LINUX §§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§§
+
+## Episode 1: Basic Commands
+
+### Navigation Commands
+- `$ pwd`: Show the current directory path.
+- `$ ls`: List all files and folders in the current directory.
+- `$ cd <directory>`: Change directory.
+- `$ cd ..`: Move back to the parent directory.
+
+### File System Commands
+- `$ whoami`: Display the current user.
+- `$ cat <file>`: Concatenate and display file content.
+- `$ cp <source> <destination>`: Copy files or directories.
+- `$ sudo <command>`: Execute a command with superuser privileges.
+- `$ rm <file>`: Remove files.
+- `$ cd /`: Change to the root directory.
+
+**Note:**
+- **Everything in Linux is represented by files, even commands and directories.**
+- Commands are located in `/usr/bin` and `/usr/sbin`.
+- Temporary files are in `/tmp`.
+- Boot files are in `/boot`.
+- Libraries are in `/lib`.
+- User directories are in `/home`.
+- Device information is in `/dev`.
+- Configuration files are in `/etc`.
+- Mount points are in `/mnt` and `/media`.
+
+## HELP: For You If You Struggle with Linux
+
+### Terminal and Shell
+- **Terminal**: Interface to interact with the shell.
+- **Shell**: Interface to interact with the OS.
+
+### Useful Commands
+- `$ ps`: Process status.
+- `$ id`: User information.
+- `$ hostname`: Host information.
+- `$ ifconfig`: Network information.
+- `$ ip`: Advanced network information.
+- `$ netstat`: Network status.
+- `$ man <command>`: Manual for a command.
+- `$ apropos <search_term>`: Search commands related to a term.
+
+## Managing Users and Groups
+
+### User Commands
+- `$ adduser <username>`: Add a new user.
+- `$ cat /etc/passwd`: View all users.
+- `$ sudo cat /etc/shadow`: View shadow file for passwords.
+- `$ sudo useradd <username>`: Add a user without password.
+- `$ sudo useradd -m <username>`: Add a user with home directory.
+- `$ sudo passwd <username>`: Add password for a user.
+- `$ sudo usermod <options> <username>`: Modify user properties.
+- `$ sudo userdel <username>`: Delete a user.
+
+### Group Commands
+- `$ sudo groupadd <groupname>`: Add a new group.
+- `$ groups`: Display group memberships.
+- `$ sudo gpasswd -d <username> <groupname>`: Remove user from a group.
+- `$ sudo groupdel <groupname>`: Delete a group.
+
+## Package Management
+
+### dpkg
+- `$ sudo dpkg -i <package.deb>`: Install a .deb package.
+
+### apt
+- `$ sudo apt update`: Update package lists.
+- `$ sudo apt full-upgrade`: Upgrade all packages.
+- `$ sudo apt install <package>`: Install a package.
+- `$ sudo apt list`: List available packages.
+- `$ sudo apt list --installed`: List installed packages.
+
+### snap
+- `$ sudo apt install snapd`: Install snap store.
+- `$ snap install <package>`: Install a snap package.
+
+### pip
+- `$ pip3 install <package>`: Install a Python package.
+
+## Dealing with Processes
+
+### Basic Commands
+- `$ ps -aux`: List all processes.
+- `$ pgrep <process_name>`: Get process ID by name.
+- `$ kill <PID>`: Kill a process by ID.
+- `$ top`: Display running processes.
+- `$ htop`: Display running processes (enhanced view).
+
+### Managing Daemons
+- `$ sudo systemctl <action> <service>`: Manage services (start, stop, restart, enable, disable).
+
+## Linux and Web Servers
+
+### Running a Simple Server
+- `$ python3 -m http.server 3000`: Run a Python HTTP server.
+- `$ npx http-server -p 3899`: Run a Node.js HTTP server.
+
+### curl Commands
+- `$ curl <URL>`: Make HTTP requests.
+- `$ curl -o <filename> <URL>`: Save URL content to a file.
+- `$ curl -I <URL>`: Get HTTP headers.
+
+## Shortcuts in Linux Terminal
+
+### ls Variations
+- `$ ls -l`: Long format listing.
+- `$ ls -al`: List all files, including hidden.
+- `$ alias <name>='<command>'`: Create an alias.
+
+### Other Shortcuts
+- `Ctrl+Shift+ +`: Zoom in.
+- `Ctrl+Shift+ -`: Zoom out.
+- `Ctrl+a`, `Ctrl+e`, `Ctrl+k`, `Ctrl+u`, `Ctrl+y`, `Ctrl+x`, `Ctrl+e`: Various navigation and editing shortcuts.
+
+### Special Commands
+- `$ sudo !!`: Run the last command with sudo.
+- `$ tail /var/log/auth.log`: View the end of a log file.
+- `Ctrl+r`: Reverse search command history.
+
+## Files and Directories
+
+### Basic Commands
+- `$ touch <filename>`: Create a new file.
+- `$ cat > <file>`: Create a file and write to it.
+- `$ mkdir <dirname>`: Create a new directory.
+- `$ mv <source> <destination>`: Move/rename a file.
+- `$ cp <source> <destination>`: Copy a file.
+- `$ tree`: Display directory tree.
+- `$ rm <filename>`: Remove a file.
+- `$ rmdir <dirname>`: Remove a directory.
+- `$ rm -r <dirname>`: Remove directory and contents.
+- `$ rm -rf <dirname>`: Force remove directory and contents.
+
