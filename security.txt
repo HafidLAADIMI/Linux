@@ -1,0 +1,123 @@
+# $$$$$$$$$$$$$$$$$$$$$$$$$$ LEARNING SECURITY + $$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+## 3 Hacking Skills Everyone Should Know
+
+### 1. Reconnaissance (RECON)
+- **Definition**: Gathering information.
+- **Techniques**:
+  - Use social media to gather information (OSINT - Open Source Intelligence).
+  - Useful sites: [OSINT Framework](https://osintframework.com/), Google.
+  - Example: Scrolling through Facebook, LinkedIn profiles to find valuable information.
+
+### 2. Dumpster Diving
+- **Definition**: Retrieving information from discarded items.
+- **Techniques**:
+  - Be cautious about the information you dispose of, especially in corporate environments.
+
+### 3. Shoulder Surfing
+- **Definition**: Observing someone to gain information.
+- **Techniques**:
+  - Be aware of surroundings when entering sensitive information.
+  - Use FaceID, fingerprint authentication for additional security.
+
+## DoS & DDoS Attacks
+
+### Definitions
+- **DoS (Denial of Service)**: A single computer floods a target with traffic, causing it to become slow or unresponsive.
+- **DDoS (Distributed Denial of Service)**: Multiple computers (often compromised) flood a target, making it more difficult to defend against.
+
+### Additional Resources
+- **Live Threat Map**: [FortiGuard Threat Map](https://threatmap.fortiguard.com/)
+
+## Phishing Attacks
+
+### Credential Harvesting
+- **Definition**: Hacking social media accounts and other platforms.
+- **Check for Pwnage**: [Have I Been Pwned](https://haveibeenpwned.com/)
+
+### Tools
+- **Blackeye**: Search for it on GitHub.
+- **Zphisher**: Similar to Blackeye, also available on GitHub.
+- **SET (Social Engineering Toolkit)**: Built-in tool in Kali Linux, type `$ setoolkit` in the command line.
+
+## Social Engineering
+
+### Techniques
+1. **Phishing**:
+   - **Spear Phishing**: Targeted attacks.
+   - **Whaling**: Targeting high-profile individuals.
+   - **Smishing**: Phishing via SMS.
+   - **Vishing**: Phishing via voice calls.
+
+2. **Pretexting**:
+   - Creating a fabricated scenario to manipulate the victim.
+
+3. **Baiting**:
+   - Offering something enticing to lure victims into a trap.
+
+4. **Quid Pro Quo**:
+   - Offering a service in exchange for information.
+
+5. **Tailgating (Piggybacking)**:
+   - Gaining physical access by closely following someone with authorized access.
+
+6. **Shoulder Surfing**:
+   - Observing someone entering sensitive information.
+
+7. **Impersonation**:
+   - Pretending to be someone else to gain trust or access.
+
+8. **Social Media Manipulation**:
+   - Using social media to gather personal information about targets.
+
+9. **Authority-Based Attacks**:
+   - Impersonating figures of authority to compel targets to comply.
+
+10. **Water-Holing**:
+    - Compromising a frequently visited website to infect users.
+
+### Psychological Techniques
+1. **Urgency**:
+   - Creating a sense of urgency to pressure victims into quick action.
+
+2. **Imitation**:
+   - Pretending to be someone else or using trusted branding.
+
+3. **Social Proof**:
+   - Claiming that others have taken a particular action to influence the victim.
+
+4. **Authority**:
+   - Impersonating authority figures to gain compliance.
+
+5. **Reciprocity**:
+   - Offering something to create a sense of obligation.
+
+6. **Liking and Familiarity**:
+   - Building rapport and using familiar references to gain trust.
+
+7. **Consistency and Commitment**:
+   - Using previous commitments to encourage further compliance.
+
+## Tools for Gathering Information
+
+### Twitter: Twint Tool
+- **Usage**: Gathering information from Twitter.
+- **Note**: Can be used with Python3 if you have experience.
+
+### Instagram: Osintgram Tool
+- **Usage**: Similar to Twint, for Instagram.
+- **Note**: Requires an Instagram account, available on GitHub.
+
+## Learning About the Command: nmap
+
+### Definition
+- **nmap (Network Mapper)**: A powerful command used for network scanning and vulnerability assessment.
+
+### Commands
+- `$ sudo nmap -sP 192.168.1.1`: Ping scan.
+- `$ sudo nmap -sT -p 80,443 192.168.1.1/16`: TCP scan on specified ports.
+- `$ sudo nmap -sS -p 80,443 192.168.1.1/16`: SYN scan on specified ports.
+- `$ sudo nmap -A 192.168.1.1/16`: Aggressive scan with OS detection.
+- `$ sudo nmap -O 192.168.1.1/16`: Detect operating systems.
+- `$ man nmap`: Manual for nmap.
+
